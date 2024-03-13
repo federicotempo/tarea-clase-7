@@ -9,7 +9,7 @@ function probarValidarNombre() {
     console.assert(validarNombre('1') === 'Este campo solo acepta letras',
         'Validar nombre no validó que el nombre no tenga solo letras');
 
-    console.assert(validarNombre('Federico') === 'Nombre correcto',
+    console.assert(validarNombre('Federico') === '',
         'Validar nombre no validó que el nombre sea correcto');
 };
 
@@ -17,7 +17,7 @@ function probarValidarCiudad() {
     console.assert(validarCiudad('') === 'Este campo no puede estar vacío',
         'Validar ciudad no validó que la ciudad no sea vacio');
 
-    console.assert(validarCiudad('Buenos Aires') === 'Ciudad correcta',
+    console.assert(validarCiudad('Buenos Aires') === '',
         'Validar ciudad no validó que la ciudad sea correcta');
 }
 
@@ -31,7 +31,7 @@ function probarValidarDescripcionRegalo() {
     console.assert(validarDescripcionRegalo('.,.,.,.') === 'Este campo sólo puede tener letras y números',
         'Validar descripcion regalo no validó que el campo sólo puede tener letras y números');
 
-    console.assert(validarDescripcionRegalo('descripcion') === 'Descripcion regalo correcta',
+    console.assert(validarDescripcionRegalo('descripcion') === '',
     'Validar descripcion regalo no validó que la descripcion sea correcta');
 }        
 
